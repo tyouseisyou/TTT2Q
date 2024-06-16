@@ -1,0 +1,140 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>TTT分享会之什么是Github Pages</title>  
+    <style>  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            font-family: 'Arial', sans-serif;  
+            overflow-x: hidden;  
+            background: #333;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+        }  
+
+        .container::before {  
+            content: '';  
+            position: absolute;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background: #fff;  
+            clip-path: circle(30% at 50% 10%);  
+            z-index: -1;  
+            animation: glow 2s ease-in-out infinite;  
+            opacity: 0.5;
+        }  
+
+        @keyframes glow {  
+            0% {  
+                transform: scale(1);  
+                opacity: 0.5;  
+            }  
+            50% {  
+                transform: scale(1.1);  
+                opacity: 1;  
+            }  
+            100% {  
+                transform: scale(1);  
+                opacity: 0.5;  
+            }  
+        }  
+        
+
+        .container {  
+            text-align: center;  
+            background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);  
+            background-size: 400% 400%;  
+            animation: gradient 15s ease infinite;  
+            padding: 40px;  
+            border-radius: 10px;  
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);  
+            position: relative;  
+            z-index: 1;  
+            transform-style: preserve-3d;  
+            transform: rotateX(10deg) rotateY(-5deg);  
+        }  
+
+        @keyframes gradient {  
+            0% {  
+                background-position: 0% 50%;  
+            }  
+            50% {  
+                background-position: 100% 50%;  
+            }  
+            100% {  
+                background-position: 0% 50%;  
+            }  
+        }  
+
+        h1 {  
+            font-size: 48px;  
+            margin: 0 0 20px;  
+            color: #fff;  
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);  
+        }  
+
+        p {  
+            font-size: 20px;  
+            color: #fff;  
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);  
+            margin: 0 0 30px;  
+        }  
+
+        .speaker-info {  
+            font-weight: bold;  
+            color: #fff;  
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);  
+            margin-bottom: 20px;  
+        }  
+
+        .action-button {  
+            display: inline-block;  
+            padding: 15px 30px;  
+            background: #007bff;  
+            color: #fff;  
+            border-radius: 5px;  
+            text-decoration: none;  
+            border: none;  
+            cursor: pointer;  
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;  
+        }  
+
+        .action-button:hover {  
+            background: #0056b3;  
+            transform: translateY(-5px);  
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);  
+        }  
+
+        .container::before {  
+            content: '';  
+            position: absolute;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));  
+            clip-path: polygon(50% 0%, 100% 0%, 100% 75%, 75%
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>欢迎大家参加</h1>  
+        <h1>TTT分享会之什么是Github Pages</h1>  
+        <p class="speaker-info">主讲人：张青松</p>  
+        <p>感谢大家的到来，期待与您共同探索Github Pages的魅力！</p>  
+        <div>  
+            <p>Github Pages是一个基于Git的版本控制和协作工具，它允许您直接从GitHub仓库发布网站。</p>  
+            <p>无论您是个人开发者、设计师、作家还是企业，Github Pages都为您提供了一个简单、快速、免费的方式来托管您的网站。</p>  
+        </div>  
+        <a href="#" class="action-button">了解更多</a>  
+    </div>  
+</body>  
+</html>
